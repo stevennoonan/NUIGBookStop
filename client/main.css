@@ -14,6 +14,18 @@
 
 
 }
+
+.btn-default:focus,
+.btn-default:active,
+.btn-default.active
+{
+    background-color: #f8233f;
+}
+
+.btn-default:hover
+{
+    background-color: #ebebeb;
+}
 h4
 {
 
