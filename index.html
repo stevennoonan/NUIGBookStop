@@ -27,13 +27,26 @@
 
 
 
-					<ul class="nav navbar-nav navbar-right">
+					<ul class="nav navbar-nav navbar-right" style="padding-right: 150px">
 						<li>
-							<a href="#">Register</a>
+						{{#if currentUser}}
+							<a href="#" class="btn btn-primary btn-primary"><span class="glyphicon glyphicon-pencil"></span> Place Ad</a>
+						{{else}}
+						<h4>
+							{{> loginButtons}}
+						</h4>
+						{{/if}}
 						</li>
-						<li>
-							<a href="#">Log in</a>
+						<li style="padding-top: 10px; padding-left: 20px">
+							{{#if currentUser}}
+
+
+							{{> loginButtons}}
+
+							{{/if}}
+
 						</li>
+
 					</ul>
 				</div>
 				
@@ -50,11 +63,11 @@
 			<br>
 			<br>
 
-
+			<div class="container-fluid">
 			<div class="row">
 				<center><div class="col">
 					<div id="coverPhoto">
-					<img src="/images/cover.jpg" alt="Smiley face" align="center">
+					<img src="/images/cover.jpg" alt="Cover Pic" class="img-responsive">
 					</div>
 
 
@@ -69,6 +82,7 @@
 						Categories
 					</h3>
 				</div>
+			</div>
 			</div>
 			<div class="row" id="categoriesOverall">
 				<div class="col-md-4">
