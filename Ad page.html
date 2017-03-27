@@ -1,131 +1,114 @@
-<html>
+
 <head>
   <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="form.css">
+	<link rel="stylesheet" type="text/css" href="main.css">
 <title>Ad page</title>
 </head>
-<body>
+<form class="form-horizontal">
+<fieldset>
+<!-- Form Name -->
+<legend>Create ad</legend>
 
-<template name="addData">
-<form class="addDataForm">
-<h3>Add a book for sale</h3>
-    <div class="row">
-      <div class="col-sm-1">
-	    <label class="form-control" for="name">Name</label>
-	</div>
-	<div class="col-sm-2">
-	   <input class="form-control" type="text"
-	   name="name" placeHolder="Please Enter Name of Book"><br>
-	</div>
-	</div>
-	<div class="row">
-	  <div class="col-sm-1">
-	    <label class="form-contact" for="author">Author</label>
-	  </div>
-	    <div class="col-sm-2">
-		  <input class="form-control" type="text"
-		  name="author" placeHolder="Please Enter Authors Name"><br>
-		 </div>
-		</div>
-	<div class="row">
-	   <div class="col-sm-1">
-	      <label class="form-control" for="publisher">Publisher</label>
-		</div>
-		<div class="col-sm-2">
-		  <input class="form-control" type="text"
-		  name="publisher" placeHolder="Please Enter Publisher"><br>
-		</div>
-	    </div>
-	<div class="row">
-	   <div class="col-sm-1">
-	      <label class="form-control" for="yearpublished">Year Published</label>
-		</div>
-		<div class="col-sm-2">
-		  <input class="form-control number" type="text"
-		  name="yearpublished" placeHolder="Please Enter Year Published"><br>
-		</div>
-	    </div>
-		<div class="row">
-	   <div class="col-sm-1">
-	      <label class="form-control" for="category">Category</label>
-		</div>
-		<div class="col-sm-2">
-		  <input class="form-control" type="text"
-		  name="category" placeHolder="Please Enter Category"><br>
-		</div>
-	    </div>
-		<div class="row">
-	   <div class="col-sm-1">
-	      <label class="form-control" for="course">Course</label>
-		</div>
-		<div class="col-sm-2">
-		  <input class="form-control" type="text"
-		  name="course" placeHolder="Please Enter Course"><br>
-		</div>
-	    </div>
-		<div class="row">
-	   <div class="col-sm-1">
-	      <label class="form-control" for="condition">Condition</label>
-		</div>
-		<div class="col-sm-2">
-		  <input class="form-control" type="text"
-		  name="condition" placeHolder="Please Enter Condition"><br>
-		</div>
-	    </div>
-		<div class="row">
-	   <div class="col-sm-1">
-	      <label class="form-control" for="revision">Revision</label>
-		</div>
-		<div class="col-sm-2">
-		  <input class="form-control" type="text"
-		  name="revision" placeHolder="Please Enter Revision"><br>
-		</div>
-	    </div>
-		<div class="row">
-	   <div class="col-sm-1">
-	      <label class="form-control" for="price">Price</label>
-		</div>
-		<div class="col-sm-2">
-		  <input class="form-control number" type="text"
-		  name="price" placeHolder="Please Enter Price"><br>
-		</div>
-	    </div>
-		<div class="row">
-	   <div class="col-sm-1">
-	      <label class="form-control" for="description">Description</label>
-		</div>
-		<div class="col-sm-2">
-		  <input class="form-control" type="text"
-		  name="description" placeHolder="Please Enter Description"><br>
-		</div>
-		<input type="submit" value="Save" class="btn btn-primary">
-		</form>
-		
-		<div class="row">
-		<div class="col-md-4">
-			 
-			<address>
-				 <strong>NUIG BookStop</strong><br>NUI Galway,<br>Galway<br>
-			</address>
-		</div>
-		<div class="col-md-4">
-			<p>
-				<center><img src="/images/nuig_logo.png" height="50%" width="50%"></center>
-			</p>
-		</div>
-		<div class="col-md-4">
-			<p>
-				</p>
-		</div>
-	</div>
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="textinput">Name of book</label>  
+  <div class="col-md-4">
+  <input name="textinput" class="form-control input-md" id="textinput" required="" type="text" placeholder="e.g. Javascript">
+    
+  </div>
 </div>
 
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/scripts.js"></script>
-  </body>
-  <template></template>
-  </html>
-	  
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="textinput">Author</label>  
+  <div class="col-md-4">
+  <input name="textinput" class="form-control input-md" id="textinput" required="" type="text" placeholder="e.g. Michael Lardner">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="textinput">Year published</label>  
+  <div class="col-md-4">
+  <input name="textinput" class="form-control input-md" id="textinput" type="text" placeholder="e.g. 2012">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="textinput">Publisher</label>  
+  <div class="col-md-4">
+  <input name="textinput" class="form-control input-md" id="textinput" type="text" placeholder="e.g. Folens">
+    
+  </div>
+</div>
+
+<!-- Select Basic -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="selectbasic">Course</label>
+  <div class="col-md-4">
+    <select name="selectbasic" class="form-control" id="selectbasic">
+      <option value="1">Other</option>
+      <option value="2">Arts: Social Science</option>
+      <option value="3">Arts: Language Studys</option>
+      <option value="4">Engineering</option>
+      <option value="5">Nursing</option>
+      <option value="6">General Science</option>
+      <option value="7">Medicine</option>
+      <option value="8">Commerce</option>
+      <option value="9">Information Technology</option>
+      <option value="10">Physics</option>
+      <option value="11">Chemistry</option>
+      <option value="12">Biology</option>
+    </select>
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="textinput">Price</label>  
+  <div class="col-md-4">
+  <input name="textinput" class="form-control input-md" id="textinput" required="" type="text" placeholder="e.g. 150">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="textinput">Revision</label>  
+  <div class="col-md-4">
+  <input name="textinput" class="form-control input-md" id="textinput" required="" type="text" placeholder="e.g. 1st">
+    
+  </div>
+</div>
+
+<!-- Textarea -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="textarea">Description</label>
+  <div class="col-md-4">                     
+    <textarea name="textarea" class="form-control" id="textarea">Description</textarea>
+  </div>
+</div>
+
+<!-- File Button --> 
+<div class="form-group">
+  <label class="col-md-4 control-label" for="filebutton">Picture</label>
+  <div class="col-md-4">
+    <input name="filebutton" class="input-file" id="filebutton" type="file">
+  </div>
+</div>
+
+<!-- Button -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="singlebutton"></label>
+  <div class="col-md-4">
+    <button name="singlebutton" class="btn btn-primary" id="singlebutton">Submit</button>
+  </div>
+</div>
+
+</fieldset>
+</form>
