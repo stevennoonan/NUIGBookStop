@@ -22,3 +22,9 @@ Router.route('allads', function(){
     this.layout('navbar')
     this.render('allAds');
 })
+
+//Add new advertisment form
+Router.route('addnewad', function(){
+    this.layout('navbar')
+    this.render('form');
+})

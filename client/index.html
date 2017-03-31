@@ -1,275 +1,274 @@
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="main.css">
 
- 		 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-			 <link rel="stylesheet" type="text/css" href="main.css">
-
-    <title>Test Page</title>
-
-
-  </head>
-		<template name="navbar">
-    <div class="container-fluid">
-	<div class="row">
-		<div class="col-md-12">
-			<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-				<div class="navbar-header">
-					 
-					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-						 <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
-					</button> <a class="navbar-brand" href="/">
-					<img alt="NuigBookStop" src="/images/logobutton.png" id="logobutton">
-				</a>
-				</div>
-				
-				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	<title>Test Page</title>
 
 
+</head>
+<template name="navbar">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-12">
+				<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+					<div class="navbar-header">
 
-					<ul class="nav navbar-nav navbar-right" style="padding-right: 150px">
-						<li>
-						{{#if currentUser}}
-							<a href="#" class="btn btn-primary btn-primary"><span class="glyphicon glyphicon-pencil"></span> Place Ad</a>
-						{{else}}
-						<h4>
-							{{> loginButtons}}
-						</h4>
-						{{/if}}
-						</li>
-						<li style="padding-top: 10px; padding-left: 20px">
-							{{#if currentUser}}
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+							<span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+						</button> <a class="navbar-brand" href="/">
+						<img alt="NuigBookStop" src="/images/logobutton.png" id="logobutton">
+					</a>
+					</div>
+
+					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
 
-							{{> loginButtons}}
 
-							{{/if}}
+						<ul class="nav navbar-nav navbar-right" style="padding-right: 150px">
+							<li>
+								{{#if currentUser}}
+								<a href="addnewad" class="btn btn-primary btn-primary"><span class="glyphicon glyphicon-pencil"></span> Place Ad</a>
+								{{else}}
+								<h4>
+									{{> loginButtons}}
+								</h4>
+								{{/if}}
+							</li>
+							<li style="padding-top: 10px; padding-left: 20px">
+								{{#if currentUser}}
 
-						</li>
 
-					</ul>
-				</div>
-				
-			</nav>
+								{{> loginButtons}}
+
+								{{/if}}
+
+							</li>
+
+						</ul>
+					</div>
+
+				</nav>
+			</div>
 		</div>
 	</div>
-	</div>
-			{{>yield}}
-		</template>
+	{{>yield}}
+</template>
 
 
-		 <template name="Home">
-			 <body>
-			<br>
-			<br>
+<template name="Home">
+	<body>
+	<br>
+	<br>
 
-			<div class="container-fluid">
-			<div class="row">
-				<center><div class="col">
-					<div id="coverPhoto">
+	<div class="container-fluid">
+		<div class="row">
+			<center><div class="col">
+				<div id="coverPhoto">
 					<img src="/images/cover.jpg" alt="Cover Pic" class="img-responsive">
-					</div>
-
-
-
 				</div>
-				</center>
+
+
 
 			</div>
-			<div class="row">
-				<div class="col">
-					<h3 class="text-center" id="categoryHeader">
-						Categories
-					</h3>
-				</div>
-			</div>
-			</div>
-			<div class="row" id="categoriesOverall">
-				<div class="col-md-4">
-					<div class="categorylist4">
+			</center>
 
-					<ul class="list-unstyled">
-						<li>
-							<a href="#">Arts: Social Science</a>
-						</li>
-						<li>
-							<a href="#">Arts: Language Studys</a>
-						</li>
-						<li>
-							<a href="#">Engineering</a>
-						</li>
-						<li>
-							<a href="#">Nursing</a>
-						</li>
-					</ul>
-
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="categorylist4">
-						<ul class="list-unstyled">
-							<li>
-								<a href="#">General Science</a>
-							</li>
-							<li>
-								<a href="#">Medicine</a>
-							</li>
-							<li>
-								<a href="#">Commerce</a>
-							</li>
-							<li>
-								<a href="#">Information Technology</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="categorylist4">
-						<ul class="list-unstyled">
-							<li>
-								<a href="#">Physics</a>
-							</li>
-							<li>
-								<a href="#">Chemistry</a>
-							</li>
-							<li>
-								<a href="#">Biology</a>
-							</li>
-							<li>
-								<a href="#">Other</a>
-							</li>
-						</ul>
-					</div>
-				</div>
+		</div>
+		<div class="row">
+			<div class="col">
+				<h3 class="text-center" id="categoryHeader">
+					Categories
+				</h3>
 			</div>
-			<br>
-			<div class="container">
-				<div class="row">
-					<div class="col-sm-6 col-sm-offset-3">
-						<div id="imaginary_container">
-							<div class="input-group stylish-input-group">
-								<input type="text" class="form-control"  placeholder="Search All Ads" >
-								<span class="input-group-addon">
+		</div>
+	</div>
+	<div class="row" id="categoriesOverall">
+		<div class="col-md-4">
+			<div class="categorylist4">
+
+				<ul class="list-unstyled">
+					<li>
+						<a href="#">Arts: Social Science</a>
+					</li>
+					<li>
+						<a href="#">Arts: Language Studys</a>
+					</li>
+					<li>
+						<a href="#">Engineering</a>
+					</li>
+					<li>
+						<a href="#">Nursing</a>
+					</li>
+				</ul>
+
+			</div>
+		</div>
+		<div class="col-md-4">
+			<div class="categorylist4">
+				<ul class="list-unstyled">
+					<li>
+						<a href="#">General Science</a>
+					</li>
+					<li>
+						<a href="#">Medicine</a>
+					</li>
+					<li>
+						<a href="#">Commerce</a>
+					</li>
+					<li>
+						<a href="#">Information Technology</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="col-md-4">
+			<div class="categorylist4">
+				<ul class="list-unstyled">
+					<li>
+						<a href="#">Physics</a>
+					</li>
+					<li>
+						<a href="#">Chemistry</a>
+					</li>
+					<li>
+						<a href="#">Biology</a>
+					</li>
+					<li>
+						<a href="#">Other</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<br>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-6 col-sm-offset-3">
+				<div id="imaginary_container">
+					<div class="input-group stylish-input-group">
+						<input type="text" class="form-control"  placeholder="Search All Ads" >
+						<span class="input-group-addon">
                         <button type="submit">
                             <span class="glyphicon glyphicon-search"></span>
                         </button>
                     </span>
-							</div>
-						</div>
 					</div>
 				</div>
 			</div>
-			<br>
+		</div>
+	</div>
+	<br>
 
-				<h2>
-				<a href="/allads" id="viewall">View All Ads</a>
-				</h2>
+	<h2>
+		<a href="/allads" id="viewall">View All Ads</a>
+	</h2>
 
-			<div class="row">
-				<div class="col-md-4">
-					<div class="thumbnail">
-						<img alt="Bootstrap Thumbnail First" src="http://lorempixel.com/output/people-q-c-600-200-1.jpg">
-						<div class="caption">
-							<h3>
-								Thumbnail label
-							</h3>
-							<p>
-								Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
-							</p>
-							<p>
-								<a class="btn btn-primary" href="#">Action</a> <a class="btn" href="#">Action</a>
-							</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="thumbnail">
-						<img alt="Bootstrap Thumbnail Second" src="http://lorempixel.com/output/city-q-c-600-200-1.jpg">
-						<div class="caption">
-							<h3>
-								Thumbnail label
-							</h3>
-							<p>
-								Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
-							</p>
-							<p>
-								<a class="btn btn-primary" href="#">Action</a> <a class="btn" href="#">Action</a>
-							</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="thumbnail">
-						<img alt="Bootstrap Thumbnail Third" src="http://lorempixel.com/output/sports-q-c-600-200-1.jpg">
-						<div class="caption">
-							<h3>
-								Thumbnail label
-							</h3>
-							<p>
-								Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
-							</p>
-							<p>
-								<a class="btn btn-primary" href="#">Action</a> <a class="btn" href="#">Action</a>
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-4">
-					<div class="thumbnail">
-						<img alt="Bootstrap Thumbnail First" src="http://lorempixel.com/output/people-q-c-600-200-1.jpg">
-						<div class="caption">
-							<h3>
-								Thumbnail label
-							</h3>
-							<p>
-								Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
-							</p>
-							<p>
-								<a class="btn btn-primary" href="#">Action</a> <a class="btn" href="#">Action</a>
-							</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="thumbnail">
-						<img alt="Bootstrap Thumbnail Second" src="http://lorempixel.com/output/city-q-c-600-200-1.jpg">
-						<div class="caption">
-							<h3>
-								Thumbnail label
-							</h3>
-							<p>
-								Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
-							</p>
-							<p>
-								<a class="btn btn-primary" href="#">Action</a> <a class="btn" href="#">Action</a>
-							</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="thumbnail">
-						<img alt="Bootstrap Thumbnail Third" src="http://lorempixel.com/output/sports-q-c-600-200-1.jpg">
-						<div class="caption">
-							<h3>
-								Thumbnail label
-							</h3>
-							<p>
-								Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
-							</p>
-							<p>
-								<a class="btn btn-primary" href="#">Action</a> <a class="btn" href="#">Action</a>
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
 	<div class="row">
 		<div class="col-md-4">
-			 
+			<div class="thumbnail">
+				<img alt="Bootstrap Thumbnail First" src="http://lorempixel.com/output/people-q-c-600-200-1.jpg">
+				<div class="caption">
+					<h3>
+						Thumbnail label
+					</h3>
+					<p>
+						Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
+					</p>
+					<p>
+						<a class="btn btn-primary" href="#">Action</a> <a class="btn" href="#">Action</a>
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-4">
+			<div class="thumbnail">
+				<img alt="Bootstrap Thumbnail Second" src="http://lorempixel.com/output/city-q-c-600-200-1.jpg">
+				<div class="caption">
+					<h3>
+						Thumbnail label
+					</h3>
+					<p>
+						Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
+					</p>
+					<p>
+						<a class="btn btn-primary" href="#">Action</a> <a class="btn" href="#">Action</a>
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-4">
+			<div class="thumbnail">
+				<img alt="Bootstrap Thumbnail Third" src="http://lorempixel.com/output/sports-q-c-600-200-1.jpg">
+				<div class="caption">
+					<h3>
+						Thumbnail label
+					</h3>
+					<p>
+						Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
+					</p>
+					<p>
+						<a class="btn btn-primary" href="#">Action</a> <a class="btn" href="#">Action</a>
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-4">
+			<div class="thumbnail">
+				<img alt="Bootstrap Thumbnail First" src="http://lorempixel.com/output/people-q-c-600-200-1.jpg">
+				<div class="caption">
+					<h3>
+						Thumbnail label
+					</h3>
+					<p>
+						Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
+					</p>
+					<p>
+						<a class="btn btn-primary" href="#">Action</a> <a class="btn" href="#">Action</a>
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-4">
+			<div class="thumbnail">
+				<img alt="Bootstrap Thumbnail Second" src="http://lorempixel.com/output/city-q-c-600-200-1.jpg">
+				<div class="caption">
+					<h3>
+						Thumbnail label
+					</h3>
+					<p>
+						Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
+					</p>
+					<p>
+						<a class="btn btn-primary" href="#">Action</a> <a class="btn" href="#">Action</a>
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-4">
+			<div class="thumbnail">
+				<img alt="Bootstrap Thumbnail Third" src="http://lorempixel.com/output/sports-q-c-600-200-1.jpg">
+				<div class="caption">
+					<h3>
+						Thumbnail label
+					</h3>
+					<p>
+						Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
+					</p>
+					<p>
+						<a class="btn btn-primary" href="#">Action</a> <a class="btn" href="#">Action</a>
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-4">
+
 			<address>
-				 <strong>NUIG BookStop</strong><br>NUI Galway,<br>Galway<br>
+				<strong>NUIG BookStop</strong><br>NUI Galway,<br>Galway<br>
 			</address>
 		</div>
 		<div class="col-md-4">
@@ -278,286 +277,396 @@
 		</div>
 		<div class="col-md-4">
 			<p>
-				</p>
+			</p>
 		</div>
 	</div>
 
 
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/scripts.js"></script>
-  </body>
-		 </template>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/scripts.js"></script>
+	</body>
+</template>
 
 
-		 <template name="adPage">
-			 <body>
-			 <br>
-			 <br><br><br>
-			 <div class="container">
-				 <div class="row">
-					 <div class="col-sm-6 col-sm-offset-3">
-						 <div id="imaginary_container">
-							 <div class="input-group stylish-input-group">
-								 <input type="text" class="form-control"  placeholder="Search All Ads" >
-								 <span class="input-group-addon">
+<template name="adPage">
+	<body>
+	<br>
+	<br><br><br>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-6 col-sm-offset-3">
+				<div id="imaginary_container">
+					<div class="input-group stylish-input-group">
+						<input type="text" class="form-control"  placeholder="Search All Ads" >
+						<span class="input-group-addon">
                         <button type="submit">
                             <span class="glyphicon glyphicon-search"></span>
                         </button>
                     </span>
-							 </div>
-						 </div>
-					 </div>
-				 </div>
-			 </div>
-			 <br>
-			 <br>
-					 <div class="row">
-						 <div class="col-md-12">
-							 <div class="row">
-								 <div class="col-md-6">
-									 <div class="carousel slide" id="carousel-377295">
-										 <ol class="carousel-indicators">
-											 <li data-slide-to="0" data-target="#carousel-377295">
-											 </li>
-											 <li data-slide-to="1" data-target="#carousel-377295" class="active">
-											 </li>
-											 <li data-slide-to="2" data-target="#carousel-377295">
-											 </li>
-										 </ol>
-										 <div class="carousel-inner">
-											 <div class="item">
-												 <img alt="Carousel Bootstrap First" src="http://lorempixel.com/output/sports-q-c-1600-500-1.jpg">
-												 <div class="carousel-caption">
-												 </div>
-											 </div>
-											 <div class="item active">
-												 <img alt="Carousel Bootstrap Second" src="http://lorempixel.com/output/sports-q-c-1600-500-2.jpg">
-												 <div class="carousel-caption">
-												 </div>
-											 </div>
-											 <div class="item">
-												 <img alt="Carousel Bootstrap Third" src="http://lorempixel.com/output/sports-q-c-1600-500-3.jpg">
-												 <div class="carousel-caption">
-												 </div>
-											 </div>
-										 </div> <a class="left carousel-control" href="#carousel-377295" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a> <a class="right carousel-control" href="#carousel-377295" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
-									 </div>
-								 </div>
-								 <div class="col-md-6">
-									 <h3 class="text-center text-primary">
-										 Add Title(Name of Book)
-									 </h3>
-									 <ul>
-										 <li>
-											 Author
-										 </li>
-										 <li>
-											 Publisher
-										 </li>
-										 <li>
-											 Year Published
-										 </li>
-										 <li>
-											 Revision
-										 </li>
-										 <li>
-											 Condition
-										 </li>
-										 <li>
-											 Category
-										 </li>
-										 <li>
-											 Course
-										 </li>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<br>
+	<br>
+	<div class="row">
+		<div class="col-md-12">
+			<div class="row">
+				<div class="col-md-6">
+					<div class="carousel slide" id="carousel-377295">
+						<ol class="carousel-indicators">
+							<li data-slide-to="0" data-target="#carousel-377295">
+							</li>
+							<li data-slide-to="1" data-target="#carousel-377295" class="active">
+							</li>
+							<li data-slide-to="2" data-target="#carousel-377295">
+							</li>
+						</ol>
+						<div class="carousel-inner">
+							<div class="item">
+								<img alt="Carousel Bootstrap First" src="http://lorempixel.com/output/sports-q-c-1600-500-1.jpg">
+								<div class="carousel-caption">
+								</div>
+							</div>
+							<div class="item active">
+								<img alt="Carousel Bootstrap Second" src="http://lorempixel.com/output/sports-q-c-1600-500-2.jpg">
+								<div class="carousel-caption">
+								</div>
+							</div>
+							<div class="item">
+								<img alt="Carousel Bootstrap Third" src="http://lorempixel.com/output/sports-q-c-1600-500-3.jpg">
+								<div class="carousel-caption">
+								</div>
+							</div>
+						</div> <a class="left carousel-control" href="#carousel-377295" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a> <a class="right carousel-control" href="#carousel-377295" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<h3 class="text-center text-primary">
+						Add Title(Name of Book)
+					</h3>
+					<ul>
+						<li>
+							Author
+						</li>
+						<li>
+							Publisher
+						</li>
+						<li>
+							Year Published
+						</li>
+						<li>
+							Revision
+						</li>
+						<li>
+							Condition
+						</li>
+						<li>
+							Category
+						</li>
+						<li>
+							Course
+						</li>
 
-									 </ul>
-								 </div>
-							 </div>
-							 <dl class="dl-horizontal">
-								 <dt>
-									 Description lists
-								 </dt>
-								 <dd>
-									 A description list is perfect for defining terms.
-								 </dd>
-								 <dt>
-									 Euismod
-								 </dt>
-								 <dd>
-									 Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.
-								 </dd>
-								 <dd>
-									 Donec id elit non mi porta gravida at eget metus.
-								 </dd>
-								 <dt>
-									 Malesuada porta
-								 </dt>
-								 <dd>
-									 Etiam porta sem malesuada magna mollis euismod.
-								 </dd>
-								 <dt>
-									 Felis euismod semper eget lacinia
-								 </dt>
-								 <dd>
-									 Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
-								 </dd>
-							 </dl>
-							 <div class="row">
-								 <div class="col-md-4">
-									 <h3 class="text-info text-center">
-										Price
-									 </h3>
-								 </div>
-								 <div class="col-md-4">
+					</ul>
+				</div>
+			</div>
+			<dl class="dl-horizontal">
+				<dt>
+					Description lists
+				</dt>
+				<dd>
+					A description list is perfect for defining terms.
+				</dd>
+				<dt>
+					Euismod
+				</dt>
+				<dd>
+					Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.
+				</dd>
+				<dd>
+					Donec id elit non mi porta gravida at eget metus.
+				</dd>
+				<dt>
+					Malesuada porta
+				</dt>
+				<dd>
+					Etiam porta sem malesuada magna mollis euismod.
+				</dd>
+				<dt>
+					Felis euismod semper eget lacinia
+				</dt>
+				<dd>
+					Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+				</dd>
+			</dl>
+			<div class="row">
+				<div class="col-md-4">
+					<h3 class="text-info text-center">
+						Price
+					</h3>
+				</div>
+				<div class="col-md-4">
 
-									 <button type="button" class="btn btn-lg btn-success btn-block">
-										 Make Offer
-									 </button>
-								 </div>
-								 <div class="col-md-4">
+					<button type="button" class="btn btn-lg btn-success btn-block">
+						Make Offer
+					</button>
+				</div>
+				<div class="col-md-4">
 
-									 <button type="button" class="btn btn-primary btn-block btn-lg">
-										 Add Comment
-									 </button>
-								 </div>
-							 </div>
-							 <h3 class="text-center">
-								 Comments and Offers
-							 </h3>
-							 <div class="media">
-								 <a href="#" class="pull-left"><img alt="Bootstrap Media Preview" src="http://lorempixel.com/64/64/" class="media-object"></a>
-								 <div class="media-body">
-									  Hi, does this book contain the tutorial DVD?
-								 </div>
-							 </div>
-						 </div>
-					 </div>
-		 </body>
-		 </template>
+					<button type="button" class="btn btn-primary btn-block btn-lg">
+						Add Comment
+					</button>
+				</div>
+			</div>
+			<h3 class="text-center">
+				Comments and Offers
+			</h3>
+			<div class="media">
+				<a href="#" class="pull-left"><img alt="Bootstrap Media Preview" src="http://lorempixel.com/64/64/" class="media-object"></a>
+				<div class="media-body">
+					Hi, does this book contain the tutorial DVD?
+				</div>
+			</div>
+		</div>
+	</div>
+	</body>
+</template>
 
 
-		 <template name="allAds">
-			 <body>
-			 <br>
-			 <br>
-			 <br><br>
-			 <div class="container">
-				 <div class="row">
-					 <div class="col-sm-6 col-sm-offset-3">
-						 <div id="imaginary_container">
-							 <div class="input-group stylish-input-group">
-								 <input type="text" class="form-control"  placeholder="Search All Ads" >
-								 <span class="input-group-addon">
+<template name="allAds">
+	<body>
+	<br>
+	<br>
+	<br><br>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-6 col-sm-offset-3">
+				<div id="imaginary_container">
+					<div class="input-group stylish-input-group">
+						<input type="text" class="form-control"  placeholder="Search All Ads" >
+						<span class="input-group-addon">
                         <button type="submit">
                             <span class="glyphicon glyphicon-search"></span>
                         </button>
                     </span>
-							 </div>
-						 </div>
-					 </div>
-				 </div>
-			 </div>
-			 <br>
-			 <br>
-						 <div class="row">
-							 <div class="col-md-12">
-								 <div class="row">
-									 <div class="col-md-3">
-										 <img alt="Bootstrap Image Preview" src="http://lorempixel.com/140/140/">
-									 </div>
-									 <div class="col-md-4">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<br>
+	<br>
+	<div class="row">
+		<div class="col-md-12">
+			<div class="row">
+				<div class="col-md-3">
+					<img alt="Bootstrap Image Preview" src="http://lorempixel.com/140/140/">
+				</div>
+				<div class="col-md-4">
 
-										 <button type="button" class="btn btn-block btn-success">
-											 Book Title Here
-										 </button>
-										 <p>
-											 <strong>Book Description here</strong>
-										 </p>
-									 </div>
-									 <div class="col-md-5">
-										 <a href="#" class="btn btn-block" type="button">Price Here</a>
-									 </div>
-								 </div>
-								 <div class="row">
-									 <div class="col-md-3">
-										 <img alt="Bootstrap Image Preview" src="http://lorempixel.com/140/140/">
-									 </div>
-									 <div class="col-md-4">
+					<button type="button" class="btn btn-block btn-success">
+						Book Title Here
+					</button>
+					<p>
+						<strong>Book Description here</strong>
+					</p>
+				</div>
+				<div class="col-md-5">
+					<a href="#" class="btn btn-block" type="button">Price Here</a>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-3">
+					<img alt="Bootstrap Image Preview" src="http://lorempixel.com/140/140/">
+				</div>
+				<div class="col-md-4">
 
-										 <button type="button" class="btn btn-block btn-success">
-											 Book Title Here
-										 </button>
-										 <p>
-											 <strong>Book Description here</strong>
-										 </p>
-									 </div>
-									 <div class="col-md-5">
-										 <a href="#" class="btn btn-block" type="button">Price Here</a>
-									 </div>
-								 </div>
-								 <div class="row">
-									 <div class="col-md-3">
-										 <img alt="Bootstrap Image Preview" src="http://lorempixel.com/140/140/">
-									 </div>
-									 <div class="col-md-4">
+					<button type="button" class="btn btn-block btn-success">
+						Book Title Here
+					</button>
+					<p>
+						<strong>Book Description here</strong>
+					</p>
+				</div>
+				<div class="col-md-5">
+					<a href="#" class="btn btn-block" type="button">Price Here</a>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-3">
+					<img alt="Bootstrap Image Preview" src="http://lorempixel.com/140/140/">
+				</div>
+				<div class="col-md-4">
 
-										 <button type="button" class="btn btn-block btn-success">
-											 Book Title Here
-										 </button>
-										 <p>
-											 <strong>Book Description here</strong>
-										 </p>
-									 </div>
-									 <div class="col-md-5">
-										 <a href="#" class="btn btn-block" type="button">Price Here</a>
-									 </div>
-								 </div>
-								 <div class="row">
-									 <div class="col-md-3">
-										 <img alt="Bootstrap Image Preview" src="http://lorempixel.com/140/140/">
-									 </div>
-									 <div class="col-md-4">
+					<button type="button" class="btn btn-block btn-success">
+						Book Title Here
+					</button>
+					<p>
+						<strong>Book Description here</strong>
+					</p>
+				</div>
+				<div class="col-md-5">
+					<a href="#" class="btn btn-block" type="button">Price Here</a>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-3">
+					<img alt="Bootstrap Image Preview" src="http://lorempixel.com/140/140/">
+				</div>
+				<div class="col-md-4">
 
-										 <button type="button" class="btn btn-success btn-block">
-											 Book Title Here
-										 </button>
-										 <p>
-											 <strong>Book Description here</strong>
-										 </p>
-									 </div>
-									 <div class="col-md-5">
-										 <a href="#" class="btn btn-block" type="button">Price Here</a>
-									 </div>
-								 </div>
-								 <ul class="pagination pagination-lg">
-									 <li>
-										 <a href="#">Prev</a>
-									 </li>
-									 <li>
-										 <a href="#">1</a>
-									 </li>
-									 <li>
-										 <a href="#">2</a>
-									 </li>
-									 <li>
-										 <a href="#">3</a>
-									 </li>
-									 <li>
-										 <a href="#">4</a>
-									 </li>
-									 <li>
-										 <a href="#">5</a>
-									 </li>
-									 <li>
-										 <a href="#">Next</a>
-									 </li>
-								 </ul>
-							 </div>
-						 </div>
+					<button type="button" class="btn btn-success btn-block">
+						Book Title Here
+					</button>
+					<p>
+						<strong>Book Description here</strong>
+					</p>
+				</div>
+				<div class="col-md-5">
+					<a href="#" class="btn btn-block" type="button">Price Here</a>
+				</div>
+			</div>
+			<ul class="pagination pagination-lg">
+				<li>
+					<a href="#">Prev</a>
+				</li>
+				<li>
+					<a href="#">1</a>
+				</li>
+				<li>
+					<a href="#">2</a>
+				</li>
+				<li>
+					<a href="#">3</a>
+				</li>
+				<li>
+					<a href="#">4</a>
+				</li>
+				<li>
+					<a href="#">5</a>
+				</li>
+				<li>
+					<a href="#">Next</a>
+				</li>
+			</ul>
+		</div>
+	</div>
 
-			 <script src="js/jquery.min.js"></script>
-			 <script src="js/bootstrap.min.js"></script>
-			 <script src="js/scripts.js"></script>
-			 </body>
-		 </template>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/scripts.js"></script>
+	</body>
+</template>
+
+<template name="form">
+<div id="formContainer">
+ <form name="form1" class="form-horizontal" action="newad.php" onsubmit="" method="post">
+	    
+	
+		<fieldset>
+			<!-- Form Name -->
+			<legend>Create  New Ad</legend>
+
+			<!-- Text input-->
+			<div class="form-group">
+				<label class="col-md-4 control-label" for="name">Name of book</label>
+				<div class="col-md-4">
+					<input name="name" class="form-control input-md" id="name" required="" type="text" placeholder="e.g. Javascript" value="save">
+
+				</div>
+			</div>
+
+			<!-- Text input-->
+			<div class="form-group">
+				<label class="col-md-4 control-label" for="author">Author</label>
+				<div class="col-md-4">
+					<input name="author" class="form-control input-md" id="author" required="" type="text" placeholder="e.g. Michael Lardner" value="save">
+
+				</div>
+			</div>
+
+			<!-- Text input-->
+			<div class="form-group">
+				<label class="col-md-4 control-label" for="year">Year published</label>
+				<div class="col-md-4">
+					<input name="year" class="form-control input-md" id="year" type="text" placeholder="e.g. 2012" value="save">
+
+				</div>
+			</div>
+
+			<!-- Text input-->
+			<div class="form-group">
+				<label class="col-md-4 control-label" for="publisher">Publisher</label>
+				<div class="col-md-4">
+					<input name="publisher" class="form-control input-md" id="publisher" type="text" placeholder="e.g. Folens" value="save">
+
+				</div>
+			</div>
+
+			<!-- Select Basic -->
+			<div class="form-group">
+				<label class="col-md-4 control-label" for="course">Course</label>
+				<div class="col-md-4">
+					<select name="course" class="form-control" id="course" value="save">
+						<option value="1">Other</option>
+						<option value="2">Arts: Social Science</option>
+						<option value="3">Arts: Language Studys</option>
+						<option value="4">Engineering</option>
+						<option value="5">Nursing</option>
+						<option value="6">General Science</option>
+						<option value="7">Medicine</option>
+						<option value="8">Commerce</option>
+						<option value="9">Information Technology</option>
+						<option value="10">Physics</option>
+						<option value="11">Chemistry</option>
+						<option value="12">Biology</option>
+					</select>
+				</div>
+			</div>
+
+			<!-- Text input-->
+			<div class="form-group">
+				<label class="col-md-4 control-label" for="price">Price</label>
+				<div class="col-md-4">
+					<input name="price" class="form-control input-md" id="price" required="" type="text" placeholder="e.g. 150" value="save">
+
+				</div>
+			</div>
+
+			<!-- Text input-->
+			<div class="form-group">
+				<label class="col-md-4 control-label" for="revision">Revision</label>
+				<div class="col-md-4">
+					<input name="revision" class="form-control input-md" id="revision" required="" type="text" placeholder="e.g. 1st" value="save">
+
+				</div>
+			</div>
+
+			<!-- Textarea -->
+			<div class="form-group">
+				<label class="col-md-4 control-label" for="description">Description</label>
+				<div class="col-md-4">
+					<textarea name="description" class="form-control" value="save" id="description">Description</textarea>
+				</div>
+			</div>
+
+			<!-- File Button -->
+			<div class="form-group">
+				<label class="col-md-4 control-label" for="image">Picture</label>
+				<div class="col-md-4">
+					<input name="image" class="input-file" id="image" type="file" value="save">
+				</div>
+			</div>
+
+			<!-- Button -->
+			<input type="submit" value="Save" class="btn btn-primary">
+
+
+		</fieldset>
+	</form>
+</div>
+
+</template>

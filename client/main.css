@@ -14,18 +14,6 @@
 
 
 }
-
-.btn-default:focus,
-.btn-default:active,
-.btn-default.active
-{
-    background-color: #f8233f;
-}
-
-.btn-default:hover
-{
-    background-color: #ebebeb;
-}
 h4
 {
 
@@ -80,4 +68,15 @@ h2
 {
     margin-left: auto;
     margin-right: auto;
+}
+
+#formContainer
+{
+    padding-top: 70px;
+}
+
+legend
+{
+    text-align: center;
+    font-weight: bolder;
 }
